@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Checklist</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Things I want to finish this week ✅</h1>
+    <p class="subtitle">Small steps, clean list.</p>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <form id="taskForm" class="task-form" autocomplete="off">
+        <label for="taskInput" class="label">Add a new item</label>
+
+        <div class="controls">
+          <input
+            id="taskInput"
+            type="text"
+            placeholder="e.g., review lecture notes..."
+            required
+          />
+          <button id="addBtn" type="submit">Add</button>
+        </div>
+      </form>
+
+      <ul id="taskList" class="task-list" aria-label="Tasks">
+        <!-- items will be created by JS -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

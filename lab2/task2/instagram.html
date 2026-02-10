@@ -1,63 +1,118 @@
+<!-- instagram-login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
-    <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram</title>
+  <link rel="stylesheet" href="style2.css" />
 </head>
 <body>
-    <div class="logo">
-        <img src="https://images.seeklogo.com/logo-png/30/2/instagram-new-2016-logo-png_seeklogo-302599.png" height="50px">
-    </div>
-    <div class="container">
-        <div class="left">
-            <h1>Посмотрите, какими моментами <br> из жизни поделились ваши <span class="gradient">близкие друзья</span>.</h1>
-            <img src="https://static.cdninstagram.com/rsrc.php/v4/yF/r/reN9rvYdLTB.png" height="750px">
-        </div>
-        <div class="right">
-            <div class="login-part">
-                <p>Войти в Instagram</p>
-                <input type="text" placeholder="Имя пользователя, номер молбильного телефона или электронная почта">
-                <input type="password" placeholder="Пароль">
-                <button class="login">Войти</button>
-                <a href="#">Забыли пароль?</a>
-            </div>
-            <div class="other-part">
-                <div class="facebook">
-                    <a href="#">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/500px-Facebook_Logo_%282019%29.png" height="20px">
-                        <p>Войти через Facebook</p>
-                    </a>
-                </div>
-                <button class="new-acc">Создать новый аккаунт</button>
-                <div class="meta">
-                        <img src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" height="30px">
-                        <p>Meta</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <footer class="footer">
-        <div class="footer-links">
-            <a href="#">Meta</a>
-            <a href="#">Информация</a>
-            <a href="#">Блог</a>
-            <a href="#">Вакансии</a>
-            <a href="#">Помощь</a>
-            <a href="#">API</a>
-            <a href="#">конфиденциальность</a>
-            <a href="#">Условия</a>
-            <a href="#">Места</a>
-            <a href="#">Instagram Life</a>
-            <a href="#">Meta AI</a>
-            <a href="#">Threads</a>
-            <a href="#">Загрузка контактов и лиц, не являющихся пользователями</a>
-            <a href="#">Meta Verified</a>
+  <!-- Top small logo (like your example) -->
+  <div class="top-logo">
+    <img
+      src="https://images.seeklogo.com/logo-png/30/2/instagram-new-2016-logo-png_seeklogo-302599.png"
+      alt="Instagram"
+      height="48"
+    />
+  </div>
+
+  <div class="layout">
+    <!-- LEFT SIDE -->
+    <section class="promo">
+      <h1 class="promo-title">
+        See what moments <br />
+        your <span class="accent">close friends</span> shared.
+      </h1>
+
+      <!-- Phone mockup image (optional but included) -->
+      <img
+        class="promo-img"
+        src="https://static.cdninstagram.com/rsrc.php/v4/yF/r/reN9rvYdLTB.png"
+        alt="Phone mockup"
+      />
+    </section>
+
+    <!-- RIGHT SIDE -->
+    <section class="side">
+      <div class="card">
+        <p class="card-title">Log in to Instagram</p>
+
+        <form class="form" action="#" method="post">
+          <label class="sr-only" for="user">Username, email, or phone</label>
+          <input
+            id="user"
+            class="input"
+            type="text"
+            placeholder="Username, email, or phone"
+            required
+          />
+
+          <label class="sr-only" for="pass">Password</label>
+          <input
+            id="pass"
+            class="input"
+            type="password"
+            placeholder="Password"
+            required
+          />
+
+          <button class="btn btn-login" type="submit">Log In</button>
+
+          <a class="forgot" href="#">Forgot password?</a>
+        </form>
+      </div>
+
+      <div class="extras">
+        <div class="or-row">
+          <span class="or-line"></span>
+          <span class="or-text">OR</span>
+          <span class="or-line"></span>
         </div>
-        <div class="footer-meta">© 2026 Instagram from Meta</div>
-    </footer>
+
+        <a class="fb-login" href="#">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/500px-Facebook_Logo_%282019%29.png"
+            alt="Facebook"
+            height="18"
+          />
+          <span>Log in with Facebook</span>
+        </a>
+
+        <button class="btn btn-signup" type="button">Create new account</button>
+
+        <div class="meta">
+          <img
+            src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png"
+            alt="Meta"
+            height="24"
+          />
+          <span>Meta</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Meta</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Jobs</a>
+      <a href="#">Help</a>
+      <a href="#">API</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Locations</a>
+      <a href="#">Instagram Lite</a>
+      <a href="#">Meta AI</a>
+      <a href="#">Threads</a>
+      <a href="#">Contact Uploading &amp; Non-Users</a>
+      <a href="#">Meta Verified</a>
+    </div>
+    <div class="footer-copy">© 2026 Instagram from Meta</div>
+  </footer>
 
 </body>
 </html>

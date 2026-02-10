@@ -1,0 +1,171 @@
+/* Base */
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body{
+  margin: 0;
+  background: #f0f2f5;
+  color: #1c1e21;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Center everything */
+.wrap{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* Two columns (left text + right form) */
+.grid{
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+/* Left */
+.intro{
+  flex: 1 1 420px;
+  min-width: 280px;
+}
+
+.fb-word{
+  margin: 0 0 12px 0;
+  font-size: 70px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #1877f2;
+}
+
+.intro-text{
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+  max-width: 520px;
+}
+
+/* Right */
+.panel{
+  flex: 0 1 420px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box{
+  width: 100%;
+  max-width: 396px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,.10), 0 8px 16px rgba(0,0,0,.12);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.field{
+  height: 50px;
+  width: 100%;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  padding: 0 14px;
+  font-size: 17px;
+  outline: none;
+}
+
+.field:focus{
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.btn-primary{
+  height: 48px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: #1877f2;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary:hover{ background: #166fe5; }
+
+.help{
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.help:hover{ text-decoration: underline; }
+
+.line{
+  height: 1px;
+  background: #dadde1;
+  margin: 18px 0;
+}
+
+.btn-green{
+  height: 48px;
+  border: none;
+  border-radius: 6px;
+  padding: 0 16px;
+  background: #42b72a;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-green:hover{ background: #36a420; }
+
+.note{
+  margin: 22px 0 0 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.note-strong{
+  font-weight: 700;
+  color: #1c1e21;
+  text-decoration: none;
+}
+
+.note-strong:hover{ text-decoration: underline; }
+
+/* Responsive */
+@media (max-width: 900px){
+  .grid{
+    justify-content: center;
+    text-align: center;
+  }
+
+  .intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-text{
+    font-size: 22px;
+    max-width: 420px;
+  }
+
+  .fb-word{ font-size: 56px; }
+}

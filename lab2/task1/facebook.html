@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Выполните вход или зарегистрируйтесь</title>
-    <link rel="stylesheet" href="a.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Log In</title>
+  <link rel="stylesheet" href="style1.css" />
 </head>
 <body>
-
-<div class="page">
-    <div class="left-section">
-        <div class="branding">
-            <h1 class="facebook-logo">facebook</h1>
-            <p class="slogan">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
-        </div>
-    </div>
-
-    <div class="right-section">
-        <div class="login-box">
-            <form action="#">
-                <input type="text" class="input-field" placeholder="Электронный адрес или номер телефона" required>
-                <input type="password" class="input-field" placeholder="Пароль" required>
-                <button class="btn-login">Вход</button>
-            </form>
-            
-            <a href="#" class="forgot-link">Забыли пароль?</a>
-            <hr class="divider">
-            <div class="create-btn-container">
-                <button class="btn-create">Создать новый аккаунт</button>
-            </div>
-        </div>
-        
-        <p class="create-page-text">
-            <a href="#" class="bold-link">Создать Страницу</a> знаменитости, музыкальной группы или компании.
+  <main class="wrap">
+    <section class="grid">
+      <div class="intro">
+        <h1 class="fb-word">facebook</h1>
+        <p class="intro-text">
+            Connect with friends and the world around you on Facebook.
         </p>
-    </div>
-</div>
+      </div>
 
+      <div class="panel">
+        <div class="box">
+          <form class="form" action="#" method="post">
+            <input class="field" type="text" placeholder="Email or phone number" required />
+            <input class="field" type="password" placeholder="Password" required />
+            <button class="btn-primary" type="submit">Log In</button>
+          </form>
+
+          <a class="help" href="#">Forgot password?</a>
+
+          <div class="line" aria-hidden="true"></div>
+
+          <button class="btn-green" type="button">Create new account</button>
+        </div>
+
+        <p class="note">
+          <a class="note-strong" href="#"> Create new account </a> of fame, musical group or company.
+        </p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
