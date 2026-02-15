@@ -1,17 +1,17 @@
-// display: flex;  ||| direction of divs horizontal by default
-// display-direction: row ||| direction of divs horizontal manually
-// display-direction: column ||| direction of divs vertical manually
+display: flex;  // direction of divs horizontal by default
+display-direction: row // direction of divs horizontal manually
+display-direction: column // direction of divs vertical manually
 
-ALIGNING HORIZONTALLY
-// justify-content; ||| aligns items on the main(x) axis
-// justify-content: flex-start; ||| aligns to the start
-// justify-content: flex-end; ||| aligns to the end
-// justify-content: center; ||| aligns to the center
-// justify-content: space-between; ||| adds spaces between each element
-// justify-content: space-around; ||| adds spaces between each element and the edges
-// justify-content: space-evenly; ||| evenly distributes space between items
+//ALIGNING HORIZONTALLY
+justify-content; // aligns items on the main(x) axis
+justify-content: flex-start; // aligns to the start
+justify-content: flex-end; // aligns to the end
+justify-content: center; // aligns to the center
+justify-content: space-between; // adds spaces between each element
+justify-content: space-around; // adds spaces between each element and the edges
+justify-content: space-evenly; // evenly distributes space between items
 
-ALIGNING VERTICALLY
+//ALIGNING VERTICALLY
 align-tems: flex-start; // aligns items on the cross(y) axis at the top 
 align-tems: flex-end; // aligns items on the cross(y) axis at the end 
 align-tems: center; // aligns items on the cross(y) axis at the center 
